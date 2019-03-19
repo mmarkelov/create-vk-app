@@ -23,8 +23,8 @@ const App = () => {
     connect.send('VKWebAppGetUserInfo', {});
   }, []);
 
-  const go = e => {
-    setActivePanel(e.currentTarget.dataset.to);
+  const go = to => () => {
+    setActivePanel(to);
   };
 
   return (
